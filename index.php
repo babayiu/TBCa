@@ -1,5 +1,5 @@
 <?php
-ini_set("log_errors" , "off");
+ini_set("log_errors" , "on");
 ob_start();
 define('API_KEY','');
 function bot($method,$datas=[]){
