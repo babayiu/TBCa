@@ -52,7 +52,7 @@ $tch2 = $forchannel2->result->status;
 ////====================
 $user = file_get_contents('Member.txt');
         $Member = explode("\n", $user);
-        if (!in_array($chat_id, $Member)) {
+        if (!in_array($chat_id, $Member)) 
             $add_user = file_get_contents('Member.txt');
             $add_user .= $chat_id . "\n";
             file_put_contents("data/$chat_id/Member.txt", "0");
