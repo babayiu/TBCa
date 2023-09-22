@@ -122,7 +122,7 @@ $spam_status = [1,time()+2];
 }
 elseif(time() < $spam_status[1]){
 if($spam_status[0]+1 > 3){
-$time = time() + 500;
+$time = time() + 500
 $spam_status = ["time $time"];
 file_put_contents("spam/$chat_id.json",json_encode($spam_status,true));
 bot('SendMessage',[
