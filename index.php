@@ -34,6 +34,7 @@ $off_on = file_get_contents("bot.txt");
 @$zir = file_get_contents("data/zir.txt");
 @$coin = file_get_contents("data/$chat_id/coin.txt");
 @$phone = file_get_contents("data/$chat_id/phone.txt");
+$fruits = ["apple", "banana", "cherry"];
 $token = file_get_contents("data/$chat_id/token.txt");
 @$teapi = file_get_contents("data/$chat_id/teapi.txt");
 @$tecli = file_get_contents("data/$chat_id/tecli.txt");
