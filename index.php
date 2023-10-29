@@ -50,7 +50,7 @@ $forchannel = json_decode(file_get_contents("https://api.telegram.org/bot$token/
 $tch = $forchannel->result->status;
 $forchannel2 = json_decode(file_get_contents("https://api.telegram.org/bot$token/getChatMember?chat_id=@$channel2&user_id=".$chat_id));
 $tch2 = $forchannel2->result->status;
-////====================
+////=============
 $user = file_get_contents('Member.txt');
         $Member = explode("\n", $user);
         if (!in_array($chat_id, $Member)) 
