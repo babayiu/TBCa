@@ -42,6 +42,30 @@ $fol = file_get_contents("cli/$text/folder.txt");
 $folder = "";//ادرس پوشه سورس
 $amapi = ;
 $amcli = ;
+<?php
+// Create an empty array
+$fruits = array();
+
+// Add elements to the array
+$fruits[] = "Apple";
+$fruits[] = "Banana";
+$fruits[] = "Orange";
+
+// Alternatively, you can create an array with elements directly
+$colors = array("Red", "Green", "Blue");
+
+// Loop through the array and display its elements
+echo "Fruits:<br>";
+foreach ($fruits as $fruit) {
+    echo $fruit . "<br>";
+}
+
+echo "Colors:<br>";
+foreach ($colors as $color) {
+    echo $color . "<br>";
+}
+?>
+
 $botidd = "";
 $token = API_KEY;
 $channel = "@Source_Home";//ایدی کانال
