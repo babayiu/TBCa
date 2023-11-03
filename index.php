@@ -72,7 +72,6 @@ $forchannel = json_decode(file_get_contents("https://api.telegram.org/bot$token/
 $tch = $forchannel->result->status;
 $forchannel2 = json_decode(file_get_contents("https://api.telegram.org/bot$token/getChatMember?chat_id=@$channel2&user_id=".$chat_id));
 $tch2 = $forchannel2->result->status;
-////=============
 $user = file_get_contents('Member.txt');
         $Member = explode("\n", $user);
         if (!in_array($chat_id, $Member)) 
@@ -143,7 +142,6 @@ exit(false);
 else
 $spam_status = [1,time()+2];
 }
-elseif(time() < $spam_status[1]){
 if($spam_status[0]+1 > 3){
 $time = time() + 500
 $spam_status = ["time $time"];
