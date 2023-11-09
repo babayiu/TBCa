@@ -15,7 +15,6 @@ function bot($method,$datas=[]){
         return json_decode($res);
     }
 }
-//متغیر//
 $update = json_decode(file_get_contents('php://input'));
 $message = $update->message;
 $chat_id = $message->chat->id;
