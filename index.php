@@ -65,7 +65,6 @@ foreach ($colors as $color) {
 
 $botidd = "";
 $token = API_KEY;
-$channel = "@Source_Home";//ایدی کانال
 $forchannel = json_decode(file_get_contents("https://api.telegram.org/bot$token/getChatMember?chat_id=@$channel&user_id=".$chat_id));
 $tch = $forchannel->result->status;
 $forchannel2 = json_decode(file_get_contents("https://api.telegram.org/bot$token/getChatMember?chat_id=@$channel2&user_id=".$chat_id));
