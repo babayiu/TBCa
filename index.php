@@ -62,6 +62,34 @@ foreach ($colors as $color) {
     echo $color . "<br>";
 }
 ?>
+<?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET_CHAT_ID';
+$message = 'Choose an option:';
+
+$keyboard = [
+    'keyboard' => [['Option 1', 'Option 2']],
+    'resize_keyboard' => true,
+    'one_time_keyboard' => true
+];
+
+file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&text=$message&reply_markup=" . json_encode($keyboard));
+?>
+
+<?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET_CHAT_ID';
+$message = 'Choose an option:';
+
+$keyboard = [
+    'inline_keyboard' => [
+        [['text' => 'Option 1', 'callback_data' => 'option1'],
+         ['text' => 'Option 2', 'callback_data' => 'option2']]
+    ]
+];
+
+file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&text=$message&reply_markup=" . json_encode($keyboard));
+?>
 
 $botidd = "";
 $token = API_KEY;
