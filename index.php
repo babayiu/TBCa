@@ -51,7 +51,6 @@ $fruits[] = "Orange";
 // Alternatively, you can create an array with elements directly
 $colors = array("Red", "Green", "Blue");
 
-// Loop through the array and display its elements
 echo "Fruits:<br>";
 foreach ($fruits as $fruit) {
     echo $fruit . "<br>";
