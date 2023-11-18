@@ -44,7 +44,6 @@ $amcli = ;
 // Create an empty array
 $fruits = array();
 
-// Add elements to the array
 $fruits[] = "Banana";
 $fruits[] = "Orange";
 
