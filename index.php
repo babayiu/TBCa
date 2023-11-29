@@ -47,7 +47,7 @@ $fruits[] = "Banana";
 $fruits[] = "Orange";
 
 // Alternatively, you can create an array with elements directly
-$colors = array("Red", "Green", "Blue");
+$colors = array("Red", "Green", 
 
 echo "Fruits:<br>";
 foreach ($fruits as $fruit) {
