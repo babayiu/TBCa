@@ -70,7 +70,6 @@ $keyboard = [
     'one_time_keyboard' => true
 ];
 
-file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&text=$message&reply_markup=" . json_encode($keyboard));
 ?>
 
 <?php
