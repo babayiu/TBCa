@@ -81,7 +81,7 @@ $keyboard = [
         [['text' => 'Option 1', 'callback_data' => 'option1'],
          ['text' => 'Option 2', 'callback_data' => 'option2']]
     ]
-];
+
 
 file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&text=$message&reply_markup=" . json_encode($keyboard));
 ?>
