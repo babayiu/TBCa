@@ -44,7 +44,6 @@ $amcli = ;
 $fruits = array();
 
 $fruits[] = "Banana";
-$fruits[] = "Orange";
 
 // Alternatively, you can create an array with elements directly
 
