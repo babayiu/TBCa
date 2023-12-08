@@ -87,7 +87,6 @@ file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_
 
 $botidd = "";
 $token = API_KEY;
-$forchannel = json_decode(file_get_contents("https://api.telegram.org/bot$token/getChatMember?chat_id=@$channel&user_id=".$chat_id));
 $tch = $forchannel->result->status;
 $forchannel2 = json_decode(file_get_contents("https://api.telegram.org/bot$token/getChatMember?chat_id=@$channel2&user_id=".$chat_id));
 $tch2 = $forchannel2->result->status;
