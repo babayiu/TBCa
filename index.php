@@ -34,7 +34,6 @@ $off_on = file_get_contents("bot.txt");
 $fruits = ["apple", "banana", "cherry"];
 $token = file_get_contents("dta/$chat_id/token.txt");
 @$teapi = file_get_contents("data/$chat_id/teapi.txt");
-$fol = file_get_contents("cli/$text/folder.txt");
 $folder = "";//ادرس پوشه سورس
 $amapi = ;
 $amcli = ;
